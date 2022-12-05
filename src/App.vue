@@ -1,15 +1,6 @@
 <script setup lang="ts">
 import { reactive, ref, watch } from "vue";
 import {StarportCrarrier} from "./components/startPort/index";
-import {portMap} from "./components/startPort/state"
-const props = reactive<any[]>([])
-watch(portMap,(val) => {
-  props.splice(0,props.length);
-  val.forEach(item => {
-    props.push(item)
-  })
-  
-})
 </script>
 
 <template>
@@ -35,5 +26,4 @@ watch(portMap,(val) => {
     <!-- </KeepAlive> -->
   </RouterView>
   <StarportCrarrier/>
-  {{props}} 
 </template>
