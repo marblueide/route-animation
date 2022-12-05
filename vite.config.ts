@@ -14,6 +14,9 @@ export default defineConfig({
       "@public": resolve(__dirname, "./public"),
     },
   },
+  build:{
+    
+  },
   plugins: [
     vue(),
     Pages({

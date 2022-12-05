@@ -15,7 +15,7 @@ export const StarportCrarrier = defineComponent({
     }
     return () => [
       Array.from(portMap.entries()).map(([port, { component, duration }]) =>
-        h(StarportCraft, { port, component, duration })
+        h(StarportCraft as any, { port, component, duration })
       ),
     ];
   },

@@ -9,7 +9,5 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    StartPortContainer: typeof import('./src/components/startPort/startPortContainer.vue')['default']
-    StartPortProxy: typeof import('./src/components/startPort/startPortProxy.vue')['default']
   }
 }
