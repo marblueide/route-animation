@@ -17,6 +17,7 @@ export default defineConfig({
   build:{
     outDir:resolve(__dirname,"./docs")
   },
+  base:"/route-animation",
   plugins: [
     vue(),
     Pages({
